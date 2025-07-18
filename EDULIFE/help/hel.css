@@ -1,0 +1,24 @@
+.help{
+    background-color: #e0f7fa;
+}
+.hel{
+    text-align: center;
+    justify-content: center;
+    color:  #4481eb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+p{
+   padding: 5px 10px 5px 10px;
+}
+.conhel{
+    font-size: 25px;
+    padding: 15px;
+}
+.conhel img{
+    margin-left: 35%;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+}

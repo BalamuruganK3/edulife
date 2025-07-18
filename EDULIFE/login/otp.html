@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification - Edulife</title>
+    <link rel="stylesheet" href="otp.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form
+            id="signInForm"
+            class="sign-in-form"
+            onsubmit="event.preventDefault();"
+          >
+            <h2 class="title">OTP Verification</h2>
+            <div class="form">
+              <!-- Email Input Field -->
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                style="
+                  font-size: large;
+                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                    'Trebuchet MS', sans-serif;
+                  border-style: ridge;
+                  border-radius: 8px;
+                "
+                required
+              />
+
+              <!-- OTP Verification Section (Initially hidden) -->
+              <div class="otpverify" style="display: none">
+                <input
+                  type="text"
+                  id="otp_inp"
+                  placeholder="Enter the OTP"
+                  style="
+                    border-radius: 8px;
+                    font-size: large;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+                      'Trebuchet MS', sans-serif;
+                    border-style: ridge;
+                  "
+                  required
+                />
+                <button type="button" class="btn" id="verify-btn">
+                  Verify OTP
+                </button>
+              </div>
+
+              <!-- Send OTP Button -->
+              <button
+                type="button"
+                class="btn"
+                id="send-otp-btn"
+                style="margin-top: 10px"
+              >
+                Send OTP
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Hello User!</h3>
+            <p>Enter OTP for Verification</p>
+          </div>
+          <img
+            src="otp.svg"
+            class="image"
+            alt="OTP Illustration"
+            style="margin-top: 100px; margin-left: 500px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="otp.js"></script>
+  </body>
+</html>

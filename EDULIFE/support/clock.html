@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break Timer\edulife</title>
+    <link rel="stylesheet" href="/navibar/nav.css">
+    <link rel="stylesheet" href="clock.css" />
+    <link rel="stylesheet" href="/footer/footer.css">
+    <script src="https://kit.fontawesome.com/b7db067546.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <img src="/navibar/Logo (4).png" alt="">
+        <a href="/Home/Home.html"><i class="fa-solid fa-house"></br></i>Home</a>
+        <a href="/About/Abt.html"><i class="fa-solid fa-circle-info"></br></i>About</a>
+        <a href="/help/Help.html"><i class="fa-solid fa-handshake-angle"></br></i>Help</a>
+        <a href=""><i class="fa-solid fa-phone"></br></i>73586</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="header">
+        <h1 class="main-heading">Emotional Support</h1>
+    </div>
+    <p class="sub-heading"><b>Hey there! Break Reminder....</b></p>
+    <div class="content">
+        <div class="main-row">
+            <div class="timer-section">
+                <img src="break.jpeg" alt="Take a Break" class="break-image"/>
+                <div class="timer-container">
+                    <div class="timer">
+                        <div class="countdown">00:00</div>
+                        <div class="controls">
+                            <input type="number" id="minutes" placeholder="Min" />
+                            <input type="number" id="seconds" placeholder="Sec" />
+                            <button id="start">Start</button>
+                            <button id="reset">Reset</button>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tic-tac-toe-container">
+                <h2>Tic Tac Toe</h2>
+                <div class="tic-tac-toe-board" id="ticTacToeBoard">
+                    <div class="tic-tac-toe-cell" data-index="0"></div>
+                    <div class="tic-tac-toe-cell" data-index="1"></div>
+                    <div class="tic-tac-toe-cell" data-index="2"></div>
+                    <div class="tic-tac-toe-cell" data-index="3"></div>
+                    <div class="tic-tac-toe-cell" data-index="4"></div>
+                    <div class="tic-tac-toe-cell" data-index="5"></div>
+                    <div class="tic-tac-toe-cell" data-index="6"></div>
+                    <div class="tic-tac-toe-cell" data-index="7"></div>
+                    <div class="tic-tac-toe-cell" data-index="8"></div>
+                </div>
+            </div>
+
+            <div class="breathing-timeline-container">
+                <h2>Breathing Timeline</h2>
+                <div class="breathing-timeline">
+                    <div id="circle" class="circle"></div>
+                </div>
+                <button id="startButton">Start</button>
+                <button id="resetButton">Reset</button>
+                <div id="instructions" class="instructions">
+                    <p>"Inhale when the circle expands and exhale when it contracts".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="heading" style="margin-top: -40px;">Yoga</h1>
+        <div class="video-container" style="margin-bottom: 22px;">
+            <iframe 
+                src="https://www.youtube.com/embed/rlGGFaBy3XI" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <audio id="break-sound" src="mixkit-sport-start-bleeps-918.wav" preload="auto"></audio>
+    <script src="clock.js"></script>
+    <script src="breathe.js"></script>
+    <script src="tic-tac-toe.js"></script>
+    <footer class="footer">
+        <div class="container row">
+            <div class="footer-col">
+                <div class="photo">
+                   <img src="/footer/Logo.png">
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li><a href="https://chat.whatsapp.com/Cvc8zGTfW5YI9XwRuxyI4Q">Whatsapp</a></li></br>
+                    <li><a href="https://www.instagram.com/the.projectphoenix1023?igsh=MWpjZDA2NmJ2Ymp5">Instagram</a></li></br>
+                    <li><a href="https://t.me/+TZzPWW2cCWYzMzE1">Telegram</a></li></br>
+                    <li><a href="https://youtube.com/@bitsnbytes-u1023b?si=btpBKI27IfRyM5an">Youtube</a></li></br>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ABOUT US</h4>
+                <ul>
+                    <li><a href="/course/course.html">Course</a></li></br>
+                    <li><a href="/guide/guide.html">Guide</a></li></br>
+                    <li><a href="/scholarship/Scholarship1.html">Scholarship</a></li></br>
+                    <li><a href="/support/clock.html">Emotional support</a></li></br>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>OUR TEAM</h4>
+                <ul>
+                    <li><a href="mailto:mahiguna2004@gmail.com">Mahendran G</a></li></br>
+                    <li><a href="mailto:madhujune2306@gmail.com">Madhumitha V</a></li></br>
+                    <li><a href="mailto:medhaselvam@gmail.com">Medha S</a></li></br>
+                    <li><a href="mailto:662005balamurugan@gmail.com">Balamurugan K</a></li></br>
+                </ul>
+            </div>
+            <div class="footer-last">
+                <h4>FEEDBACK</h4>
+                <a href="mailto:theprojectphoenix1023@gmail.com">theprojectphoenix1023@gmail.com</a></br>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/b7db067546.js" crossorigin="anonymous"></script>
+<script>
+    function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+ </script>
+</html>

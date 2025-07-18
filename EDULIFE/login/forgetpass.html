@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password edulife</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #4481eb;
+        color: white;
+      }
+      .container {
+        background: white;
+        color: #4481eb;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .btn {
+        background: #4481eb;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background: #4d84e2;
+      }
+      .message {
+        margin-top: 20px;
+        display: none;
+      }
+      .login-link {
+        color: #000000;
+        text-decoration: none;
+        margin-top: 10px;
+        display: block;
+      }
+      .login-link:hover {
+        text-decoration: underline;
+      }
+      /* Creative effect for container appearance */
+      .container {
+        animation: slideDown 1s ease-out;
+      }
+      @keyframes slideDown {
+        0% {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Reset Your Password</h2>
+      <form id="forgotPassForm">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Send Reset Link</button>
+      </form>
+      <div class="message">
+        <p>Password reset link has been sent to your email!</p>
+        <a href="login.html" class="login-link">Remember password? Login</a>
+      </div>
+    </div>
+    <script>
+      document.getElementById("forgotPassForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Simulate email sending
+        setTimeout(function() {
+          document.querySelector(".message").style.display = "block";
+        }, 500);
+      });
+    </script>
+  </body>
+</html>

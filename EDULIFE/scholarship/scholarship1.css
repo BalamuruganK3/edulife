@@ -1,0 +1,84 @@
+body {
+  background-color: #e0f7fa; /* Set background color for the entire page */
+  margin: 0;
+  padding: 0;
+}
+/* Scholarship container */
+.schol {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Scholarship entries container */
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+  overflow-x: auto;
+}
+input {
+  font-family: "Poppins", sans-serif;
+}
+/* Scholarship entry */
+.entry {
+  flex: 0 0 300px; 
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #0072ee;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Entry text and image */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+p{
+  justify-content: end;
+ 
+ bottom: 0%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .schol {
+    margin: 20px auto;
+  }
+  .entry {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .schol {
+    padding: 10px;
+  }
+  .entry {
+    flex-basis: 100%;
+  }
+}
+
+/* Hide horizontal scrollbar */
+.flex::-webkit-scrollbar {
+  display: none;
+}
+
+/* Headings */
+.head {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <div class="slide-container">
+        <div class="mySlides fade">
+          <img src="06.png">
+        </div>
+        <div class="mySlides fade">
+          <img src="23.jpg">
+        </div>
+        <div class="mySlides fade">
+          <img src="10.jpg">
+        </div>
+      </div>
+      <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+      </div>
+      <div class="container">
+        <div class="text-box" onclick="navigateTo('course.html')">
+            <h3>Courses</h3>
+            <p>Explore the world of coding and innovation using C++, Python and Java with limited possibilities of AI and ML. Elevate your skills and shape your future..</p>
+        </div>
+        <div class="text-box" onclick="navigateTo('guide.html')">
+            <h3>Guide</h3>
+            <p>Chart your path to success with our comprehensive career guide. Whether you're just starting out or looking to advance, we provide the tools and insights you need. Let us help you navigate your journey to a fulfilling career.</p>
+        </div>
+        <div class="text-box" onclick="navigateTo('scholarship.html')">
+            <h3>Scholarships</h3>
+            <p>Unlock your potential with scholarships designed to make your dreams a reality. Don’t let financial barriers hold you back—invest in your education. Your future is worth it, and the opportunity is here!</p>
+        </div>
+        <div class="text-box" onclick="navigateTo('clock.html')">
+            <h3>Emotional Support</h3>
+            <p>Your emotional well-being is the foundation of a healthy life. Embrace the support you need to manage stress, build resilience, and find balance. Because taking care of your mind is just as important as your studies</p>
+        </div>
+    </div>
+</body>
+<script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+  function navigateTo(page) {
+    window.location.href = page;
+}
+
+  </script>
+</html>

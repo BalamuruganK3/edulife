@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="utf-8">
+      <title>edulife nav</title>
+      <link rel="stylesheet" href="nav.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="topnav" id="myTopnav">
+         <img src="Logo (4).png" alt="">
+         <a href="Home.html"><i class="fa-solid fa-house"></br></i>Home</a>
+         <a href="/About/Abt.html"><i class="fa-solid fa-circle-info"></br></i>About</a>
+         <a href="/help/Help.html"><i class="fa-solid fa-handshake-angle"></br></i>Help</a>
+         <a href=""><i class="fa-solid fa-phone"></br></i>73586</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+   </body>
+   <script src="https://kit.fontawesome.com/b7db067546.js" crossorigin="anonymous"></script>
+   <script>
+      function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+   </script>
+</html>
